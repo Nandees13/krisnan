@@ -3,251 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krisnan K - Portfolio</title>
+    <title>Coming Soon</title>
     <style>
-        * {
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-
-        body {
-            background-color: #f4f4f9;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        header {
-            background: linear-gradient(90deg, #004aad, #0066cc);
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        header p {
-            font-size: 1.2rem;
-        }
-
-        nav {
-            background-color: #333;
-            padding: 1rem;
-        }
-
-        nav ul {
-            list-style: none;
+            height: 100vh;
             display: flex;
             justify-content: center;
-            gap: 2rem;
+            align-items: center;
+            background-color: #f0f2f5;
+            font-family: Arial, sans-serif;
         }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #00aaff;
-        }
-
         .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        section {
-            background: white;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        section h2 {
-            color: #004aad;
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            border-bottom: 2px solid #0066cc;
-            padding-bottom: 0.5rem;
-        }
-
-        .project, .award, .course, .membership {
-            margin-bottom: 1.5rem;
-        }
-
-        .project h3, .award h3, .course h3, .membership h3 {
-            color: #333;
-            font-size: 1.4rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .project p, .award p, .course p, .membership p {
-            color: #666;
-            margin-bottom: 0.5rem;
-        }
-
-        .project a, .award a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-
-        .project a:hover, .award a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
             text-align: center;
-            padding: 1rem;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
-        footer p {
-            font-size: 1rem;
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
         }
-
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                gap: 1rem;
+        p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 2s linear infinite;
+            margin: 0 auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em;
             }
-
-            header h1 {
-                font-size: 2rem;
-            }
-
-            section {
-                padding: 1rem;
+            p {
+                font-size: 1em;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Krisnan K</h1>
-        <p>B.E. Mechanical Engineering | Kumaraguru College of Technology</p>
-        <p>Email: notifykrisnan@gmail.com | Phone: (+91) 9385695977 | <a href="https://www.linkedin.com/in/krisnan" style="color: #fff;">LinkedIn</a></p>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#awards">Awards</a></li>
-            <li><a href="#courses">Courses</a></li>
-            <li><a href="#memberships">Memberships</a></li>
-        </ul>
-    </nav>
-
     <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am Krisnan K, a 7th-semester B.E. Mechanical Engineering student at Kumaraguru College of Technology, Coimbatore, affiliated with Anna University. With a strong passion for research and innovation, I have actively participated in various projects, competitions, and conferences, focusing on sustainable energy solutions and mechanical engineering advancements. My academic journey is complemented by numerous awards, certifications, and active involvement in professional societies.</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Vacuum Energy Storage System</h3>
-                <p>Developed a vacuum-based energy storage system to address the intermittency of renewable energy sources, utilizing vacuum technology and adiabatic expansion. Funded by KCT's Centre for Exploratory Research (Rs. 48,000). <a href="https://youtu.be/rbrj7x/cxf8?si=m3o8VgvvhfqEYOYL">Video Link</a></p>
-            </div>
-            <div class="project">
-                <h3>Flywheel Energy Storage System</h3>
-                <p>Designed a flywheel-based system to enhance grid stability for renewable energy integration, funded by KCT's Centre for Exploratory Research (Rs. 1,05,000).</p>
-            </div>
-            <div class="project">
-                <h3>Compressed Air Powered Pneumatic Solar Tracker</h3>
-                <p>Created a cost-effective pneumatic solar tracker to improve solar panel efficiency, funded by KCT's Centre for Exploratory Research (Rs. 49,000). <a href="https://www.youtube.com/watch?v=7J3vAk5LvOg">Video Link</a></p>
-            </div>
-            <div class="project">
-                <h3>Liquid Piston Air Compressor</h3>
-                <p>Developed an innovative air compressor using water as a piston substitute to enhance efficiency, funded by KCT's Centre for Exploratory Research (Rs. 48,000). <a href="https://youtu.be/9BYAP2ARqGM">Video Link</a></p>
-            </div>
-            <div class="project">
-                <h3>Sensible Heat Storage System</h3>
-                <p>Designed a sand battery with a solar concentrator for clean cooking, funded by KCT's Centre for Exploratory Research (Rs. 44,000). <a href="https://youtu.be/G0-1YWU1qU">Video Link</a></p>
-            </div>
-            <div class="project">
-                <h3>Study on Pumped Hydro Storage System</h3>
-                <p>Conducted a study on pumped hydro storage to enhance India's grid stability and renewable energy integration, in collaboration with industry.</p>
-            </div>
-            <div class="project">
-                <h3>Automatic Vegetable Transplanter</h3>
-                <p>Developed an AI-powered multi-crop transplanter to enhance farm efficiency, funded by KCT (Rs. 3,00,000).</p>
-            </div>
-        </section>
-
-        <section id="awards">
-            <h2>Awards & Recognitions</h2>
-            <div class="award">
-                <h3>Certificate of Recognition (2023-2024)</h3>
-                <p>Received for outstanding academic performance.</p>
-            </div>
-            <div class="award">
-                <h3>Visvesvaraya Award (2022-2023)</h3>
-                <p>Awarded for academic and research excellence.</p>
-            </div>
-            <div class="award">
-                <h3>Top 30 - BeChangeMakers 2024</h3>
-                <p>Recognized for innovative project work. <a href="https://drive.google.com/drive/folders/1zkXP10o03TECqW6wps9MaMevUFLStYfB?usp=drive_link">Proof</a></p>
-            </div>
-            <div class="award">
-                <h3>Winner - International Project Expo 2024</h3>
-                <p>Awarded for outstanding project presentation.</p>
-            </div>
-            <div class="award">
-                <h3>Silver Medal - InterVarsity Innovation Challenge</h3>
-                <p>Received for innovative project contributions.</p>
-            </div>
-        </section>
-
-        <section id="courses">
-            <h2>Self-Learning Courses</h2>
-            <div class="course">
-                <h3>Physics of Renewable Energy Systems</h3>
-                <p>NPTEL - IIT Kharagpur, 12 Weeks, Completed</p>
-            </div>
-            <div class="course">
-                <h3>Mechanics of Materials I</h3>
-                <p>Georgia Institute of Technology - Coursera, 5 Weeks, Completed</p>
-            </div>
-            <div class="course">
-                <h3>SolidWorks Associate - Mechanical Design</h3>
-                <p>Dassault Systems, 1 Month, Completed</p>
-            </div>
-        </section>
-
-        <section id="memberships">
-            <h2>Professional Memberships</h2>
-            <div class="membership">
-                <h3>Institute of Electrical and Electronics Engineers</h3>
-                <p>Student Membership, Valid until Dec 2024</p>
-            </div>
-            <div class="membership">
-                <h3>Society of Automotive Engineers</h3>
-                <p>Student Membership, Valid until May 2025</p>
-            </div>
-            <div class="membership">
-                <h3>American Society of Mechanical Engineering</h3>
-                <p>Student Membership, Valid until Sep 2024</p>
-            </div>
-        </section>
+        <h1>Coming Soon</h1>
+        <p>This page is under construction. Check back soon for updates!</p>
+        <div class="loader"></div>
     </div>
-
-    <footer>
-        <p>&copy; 2025 Krisnan K. All rights reserved.</p>
-    </footer>
 </body>
 </html>
